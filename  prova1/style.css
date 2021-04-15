@@ -1,0 +1,56 @@
+* {
+    font-family: Calibri, Arial, sans-serif;
+}
+body {
+    background-color: navy;
+    font-size: 16px;
+}
+#root {
+    font-size: 18px;
+    border-radius: 16px;
+    background-color: white;
+    margin: 50px 20px 35px 35px;
+    padding: 20px;
+}
+h1, h2 {
+    color: navy;
+}
+h1 {                                    
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.4);
+    text-align: center;
+    font-size: 3.0rem;
+}
+h2 {
+    font-size: 1.5em;
+    text-align: left;
+}
+div#img{
+    text-align: center;
+}
+figcaption {
+    font-style: italic;  
+}
+ol[type="1"], ol:not([type]) {
+    margin-left: 30%;
+}
+ol[type="1"] > li, ol:not([type]) > li {
+    font-weight: bold;
+}
+li#asia{
+    color:orangered ;
+}
+li#africa{
+    color:brown ;
+}
+li#america{
+    color:red;
+}
+li#europa{
+    color: green;
+}
+li#oceania{
+    color:blue;
+}
+p{
+    text-align: right;
+}
