@@ -1,26 +1,92 @@
-/* CSS reset */
-* { /* Todos os elementos */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* CSS Reset */
+:root   {
+    --cor-primaria: #550000;
+    --cor-secundaria: #FF7F2A;
+    --cor-fundo-clara: #DDDDDD;
+    --cor-fundo-escura: #BBBBBB;
+    --cor-texto-clara: #FFFFFF;
+    --cor-texto-escura: #777777;
+}
+
+*{
     padding: 0;
     margin: 0;
-    
-    /*Exmplos de família sem serifa
-    font-family: 'Calibri', 'Arial', sans; */
+    font-family: Raleway, Calibri, Arial, 'Times New Roman'; 
+}
 
-    /*Exmplos de família sem serifa
-    font-family: 'Times New Roman', serif; */
+html{
+    font-size: 16px;
+}
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
 }
 
 header {
-    background-color: #550000;
+    background-color: var(--cor-primaria);
     padding: 10px 20px;
 }
 
-nav ul li {
+nav ul li{
     display: inline-block;
     margin: 10px;
 }
 
 nav {
-    background-color: #FF7F2A;
-    color: #FFFFFF
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-clara);
+}
+
+#content {
+    background-color: var(--cor-fundo-clara);
+    padding: 20px;
+    display: flex; /* este elemento e seus filhos usarão flexbox */
+    flex-direction: row
+}
+
+section {
+    background-color: var(--cor-texto-clara);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1); /* Sombra (drop-down shadow)*/
+    flex-grow: 1;
+}
+
+#principal {
+    flex-grow: 3; /* flex-grow unidades de largura */
+}
+
+#secundario {
+    margin-left: 20px;
+    background-color: var(--cor-fundo-escura);
+}
+
+section article {
+    margin: 12px 0;
+}
+
+section > h1 { /* Apenas em h1 filhos diretos da section*/
+    text-transform: uppercase;  
+    color: var(--cor-secundaria);
+}
+
+article > h1 {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+article > h1 > a {
+    font-size: 1.5rem;
+}
+
+article > p {
+    color: var(--cor-texto-escura);
 }
