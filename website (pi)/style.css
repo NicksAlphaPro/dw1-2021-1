@@ -52,7 +52,7 @@ body {
 
 #logo {
     align-self: center;
-    padding-left: 550px;
+    padding-left: 820px;
   }
  
 .header {
@@ -109,7 +109,7 @@ a:hover h3 {
 }
   
 .card-1 {
-  margin-left: 30px;
+  margin-left: 10px;
   margin-top: 30px;
   background-color: #211d46;
   flex-direction: column;
@@ -184,9 +184,9 @@ a:hover h3 {
     background-color: #211d46;
     flex-direction: column;
     padding: 30px 30px 30px 30px; 
-    width: 800px;
     letter-spacing:.1em;
     border-radius: 10px;
+    width: 800px;
   }
     
 main .card-3 {
@@ -195,7 +195,7 @@ main .card-3 {
     position: absolute;
     height: 890px;
     width: 500px;
-    margin-left: 300px;
+    margin-left: 850px;
   }
 
 .card-3 a {
@@ -224,7 +224,7 @@ main .card-3 {
     }
         
 .card-4 {
-      margin-left: 30px;
+      margin-left: 10px;
       margin-top: 30px;
       background-color: #211d46;
       flex-direction: column;
@@ -257,11 +257,10 @@ main .card-3 {
       margin-top: 30px;
       background-color: #211d46;
       flex-direction: column-reverse;
-      width: 700px;
       letter-spacing:.1em;
       border-radius: 10px;
       padding: 24px;
-    border-radius: 4px;
+      border-radius: 4px;
   }
 
 .card-5 img {
