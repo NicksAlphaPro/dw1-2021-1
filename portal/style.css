@@ -370,6 +370,18 @@ footer img {
 
 @media screen and (max-width: 640px) {
     /*
-        A FAZER: colocar o logo principal e os ícones de redes sociais em coluna
+    A FAZER: colocar o logo principal e os ícones de redes sociais em coluna
     */
+    header {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    header img {
+    max-width: 100%;
+    }
+    
+    .destaque > h1 > a {
+    font-size: 2rem;
+    }
 }
